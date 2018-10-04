@@ -1,3 +1,14 @@
-<p>
-  produtos works!
-</p>
+
+<div *ngIf="produtos.length > 0">
+  <table>
+    <tr *ngFor="let p of produtos">
+      <td>{{p.id}}</td>
+      <td>{{p.nome}}</td>
+    </tr>
+  </table>
+  <p> Temos {{produtos.length}} produtos cadastrado(s). </p>
+</div>
+
+<div *ngIf="produtos.length <= 0 ">
+  <p> Não temos produtos cadastrados.</p>
+</div>

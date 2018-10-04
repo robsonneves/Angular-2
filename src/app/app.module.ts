@@ -4,6 +4,8 @@ import { RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { EditarProdutosComponent } from './editar-produtos/editar-produtos.component';
+import { UppercaseDirective } from './uppercase.directive';
+import { TesteDirective } from './teste.directive';
 
 const appRoutes : Routes = [
   {path: 'produtos', component: ProdutosComponent },
@@ -14,7 +16,9 @@ const appRoutes : Routes = [
   declarations: [
     AppComponent,
     ProdutosComponent,
-    EditarProdutosComponent
+    EditarProdutosComponent,
+    UppercaseDirective,
+    TesteDirective
   ],
   imports: [
     BrowserModule,
